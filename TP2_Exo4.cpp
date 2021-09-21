@@ -6,10 +6,10 @@
 
 int main()
 {
-	int age, nbCinema, nbFastFood;
-	char sexe, YesNo, liste, QuickMcdo;
+	int age, nbCinema, nbFastFood, liste = 0;
+	char sexe, YesNo, QuickMcdo;
 
-	printf("Indiquer votre âge\n");
+	printf("Indiquer votre age\n");
 	scanf("%d", &age);
 
 	printf("Indiquer votre sexe (M pour masculin, F pour féminin)\n");
@@ -21,19 +21,17 @@ int main()
 	printf("Vous préférez le Quick ou le McDonalds ?");
 	scanf("%c", &QuickMcdo);
 
-
 	printf("Indiquer le nombre de fois ou vous allez au fastfood par mois\n");
-	scanf("%d" &nbFastFood);
+	scanf("%d", &nbFastFood);
 
 	printf("Pratiquez vous un sport ? (y pour Oui, n pour Non)\n");
-	scanf("%c" &YesNo);
+	scanf("%c", &YesNo);
 
-	if (YesNo = "y") {
-		printf("Pratiquez vous un sport parmis la liste suivante ? Foot, Tennis, Basket, Judo, Natation ");
-		scanf("%c" &liste);
-	};
+	printf("Pratiquez vous un sport parmis la liste suivante ? 1 pour Foot, 2 pour Tennis, 3 pour Basket, 4 pour Judo, 5 pour Natation ");
+	scanf("%d", &liste);
 
-	printf(" Vous êtes un(e) %c et vous avez %d age\n. Vous allez %d fois au cinema par mois, vous préférez le %c et vous y aller %d fois par mois.");
+
+	printf(" Vous êtes un(e) %c et vous avez %d age\n. Vous allez %d fois au cinema par mois, vous préférez le %c et vous y aller %d fois par mois.", sexe, age, nbCinema, QuickMcdo, nbFastFood);
 };
 
 /* On désire effectuer un questionnaire auprès des élèves d’un lycée afin de connaître
