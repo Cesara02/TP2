@@ -31,7 +31,11 @@ int main()
 	scanf("%d", &liste);
 
 
-	printf(" Vous êtes un(e) %c et vous avez %d age\n. Vous allez %d fois au cinema par mois, vous préférez le %c et vous y aller %d fois par mois.", sexe, age, nbCinema, QuickMcdo, nbFastFood);
+	printf(" Vous êtes un(e) %c et vous avez %d age\n. Vous allez %d fois au cinema par mois, vous préférez le %c et vous y aller %d fois par mois.\n", sexe, age, nbCinema, QuickMcdo, nbFastFood)
+
+	if (liste != 1 || 2 || 3 || 4 || 5 && YesNo = n) {
+		printf("Vous ne pratiquez pas de sport")
+	};
 };
 
 /* On désire effectuer un questionnaire auprès des élèves d’un lycée afin de connaître
